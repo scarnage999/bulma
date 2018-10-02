@@ -6,17 +6,6 @@
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-	<style>
-	.tabs ul {
-		flex-direction: column
-	}
-	.tabs li {
-		min-width: 250px;
-	}
-	.tabs a {
-		padding: 1.5em 1em;
-	}
-	</style>
   </head>
   <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -87,7 +76,7 @@
         My first website with <strong>Bulma</strong>!
       </p>
 	  <div class="columns">
-	  <div class="tabs is-toggle is-fullwidth is-large column is-one-fifth">
+	  <div class="tabs tabs-vertical is-toggle is-fullwidth is-large column is-one-fifth">
   <ul>
     <li class="is-active">
       <a>
@@ -117,7 +106,8 @@
 </div>
 
 <div id="tab-content" class="column">
-  <p class="is-active" data-content="1">
+  <div class="is-active columns" data-content="1">
+    <div class="column">
     <div class="box">
   <article class="media">
     <div class="media-left">
@@ -155,7 +145,47 @@
     </div>
   </article>
 </div>
-  </p>
+</div>
+ <div class="column">
+ <div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </p>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item" aria-label="reply">
+            <span class="icon is-small">
+              <i class="fas fa-reply" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="retweet">
+            <span class="icon is-small">
+              <i class="fas fa-retweet" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="like">
+            <span class="icon is-small">
+              <i class="fas fa-heart" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>
+</div>
+  </div>
   <p data-content="2">
     Music
   </p>

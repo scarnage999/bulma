@@ -7409,6 +7409,18 @@ label.panel-block:hover {
   font-size: 1.5rem;
 }
 
+.tabs-vertical ul {
+  flex-direction: column;
+}
+
+.tabs-vertical li {
+  min-width: 250px;
+}
+
+.tabs-vertical a {
+  padding: 1.5em 1em;
+}
+
 .column {
   display: block;
   flex-basis: 0;
