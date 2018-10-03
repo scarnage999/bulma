@@ -20,7 +20,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-
+ <!--NAVBAR-->
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item">
@@ -68,6 +68,7 @@
     </div>
   </div>
 </nav>
+<!--FIN NAVBAR-->
   <section class="section">
       <h1 class="title">
         Hello World
@@ -76,6 +77,7 @@
         My first website with <strong>Bulma</strong>!
       </p>
 	  <div class="columns">
+	  <!--TABS-->
 	  <div class="tabs tabs-vertical is-toggle is-fullwidth is-large column is-one-fifth">
   <ul>
     <li class="is-active">
@@ -104,11 +106,11 @@
     </li>
   </ul>
 </div>
-
+ <!--FIN TABS-->
 <div id="tab-content" class="column">
-  <div class="is-active columns" data-content="1">
-    <div class="column">
-    <div class="box">
+<div class="tile is-ancestor">
+  <div class="is-active tile is-parent is-6" data-content="1">
+    <article class="tile is-child box">
   <article class="media">
     <div class="media-content">
       <div class="content">
@@ -178,31 +180,12 @@
   </div>
 </nav>
       </div>
-      <nav class="level is-mobile">
-        <div class="level-left">
-          <a class="level-item" aria-label="reply">
-            <span class="icon is-small">
-              <i class="fas fa-reply" aria-hidden="true"></i>
-            </span>
-          </a>
-          <a class="level-item" aria-label="retweet">
-            <span class="icon is-small">
-              <i class="fas fa-retweet" aria-hidden="true"></i>
-            </span>
-          </a>
-          <a class="level-item" aria-label="like">
-            <span class="icon is-small">
-              <i class="fas fa-heart" aria-hidden="true"></i>
-            </span>
-          </a>
-        </div>
-      </nav>
     </div>
   </article>
+</article>
 </div>
-</div>
- <div class="column">
- <div class="box">
+ <div class="tile is-parent is-6">
+ <article class="tile is-child box">
   <article class="media">
     <div class="media-left">
     </div>
@@ -222,19 +205,21 @@
       </div>
     </div>
   </article>
+</article>
 </div>
 </div>
+ <div data-content="2">
+	Music
   </div>
-  <p data-content="2">
-    Music
-  </p>
-  <p data-content="3">
+  <div data-content="3">
     Videos
-  </p>
-  <p data-content="4">
+  </div>
+  <div data-content="4">
     Documents
-  </p>
+  </div>
 </div>
+
+ 
 </div>
   
   </section>
